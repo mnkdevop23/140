@@ -1,0 +1,300 @@
+/*---preloader---*/
+
+.preloader {
+    display: none;
+}
+
+.preloader-wrap {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 5000;
+}
+
+.preloader .spinner-border {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #ffff;
+}
+
+/*---form-popup---*/
+
+.form-popup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: rgb(26, 31, 39);
+}
+
+.close-form-popup {
+    width: 60px;
+    height: 60px;
+    border: none;
+    position: absolute;
+    top: 145px;
+    right: 260px;
+    z-index: 7;
+    background: url(../images/close.png) center no-repeat;
+}
+
+.iti {
+    width: 100%;
+    height: 100%;
+}
+
+.iti__flag-container {
+    width: 60px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #c2c2c2;
+}
+
+.iti__selected-flag {
+    padding-left: 15px !important;
+}
+
+.iti__country-name {
+    color: #999;
+}
+
+label.error {
+    position: absolute;
+    bottom: -17px;
+    left: 0;
+    font-size: 12px;
+    color: red;
+}
+
+.phone-wrap {
+    padding-bottom: 10px;
+    display: flex;
+}
+
+.form-field {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #ced1d5;
+}
+
+.popup-ver {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0 20px;
+    font-size: 14px;
+    z-index: 500;
+}
+
+.popup-ver-in {
+    display: block;
+    max-width: 600px;
+    width: 100%;
+    margin: 100px auto;
+    box-shadow: 0 2px 30px -4px #000;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    background-color: #fff;
+}
+
+.popup-ver-header {
+    padding: 20px 15px;
+    text-align: left;
+    font-size: 16px !important;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    background-color: #1f1f1f;
+}
+
+.popup-ver .popup-wrap-but {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.popup-ver-ver-cont {
+    padding: 20px 15px;
+}
+
+.popup-ver .popup-container {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 20px 0;
+}
+
+@media (max-width: 585px) {
+    .popup-ver .popup-container {
+        padding: 20px 9px 0;
+    }
+}
+
+.popup-ver button {
+    color: #fff;
+    background: none;
+    border: none;
+}
+
+.popup-ver .popup-close {
+    font-size: 17px !important;
+    color: #fff;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.popup-ver .popup-close:hover {
+    color: #968f8f;
+}
+
+.popup-ver .popup-form-title {
+    text-align: left;
+    padding-bottom: 8px;
+}
+
+#sms-code {
+    padding: 12px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #a7a7a7;
+}
+
+#res {
+    padding: 14px 29px 13px 26px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .3s;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: rgb(255, 217, 0);;
+}
+
+.phoneConfirm, .codePhoneConfirm {
+    border: 1px solid #a7a7a7 !important;
+}
+
+@media (max-width: 585px) {
+    #res {
+        width: 100%;
+    }
+}
+
+#submit-number {
+    padding: 9px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .3s;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    background-color: rgb(255, 217, 0);;
+}
+
+#change-number {
+    padding: 14px 29px 13px 26px;
+    background-color: #a7a7a7;
+    box-shadow: 0 4px 10px rgba(136, 140, 142, 0.5);
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .3s;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 585px) {
+    #change-number {
+        width: 100%;
+    }
+}
+
+#change-number:hover {
+    background: #8c9295;
+    box-shadow: 0 2px 3px rgba(136, 140, 142, 0.3);
+}
+
+.sms-code-wrap {
+    position: relative;
+}
+
+#phoneConfirm-error {
+    bottom: -23px;
+    left: 0;
+}
+
+#currPhone {
+    font-weight: bold;
+    font-size: 16px !important;
+    display: inline-block;
+    color: rgb(255, 217, 0);;
+}
+
+#codeError {
+    color: red;
+    display: none;
+    font-size: 11px !important;
+}
+
+.popup-form {
+    position: relative;
+}
+
+.phoneConfirm {
+    max-width: 100% !important;
+    margin-left: 5px;
+}
+
+.phone#phoneConfirmWrap {
+    display: none;
+}
+
+.phoneConfirmWrap .selected-dial-code {
+    padding-left: 14px !important;
+}
+
+@media (max-width: 767px) {
+    .image-hide-mob {
+        display: none;
+    }
+}
+
+form .t-input-block {
+    position: relative;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
